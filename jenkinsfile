@@ -6,6 +6,10 @@ pipeline {
         GITHUB_REPO_URL = 'https://github.com/Rutuja1099/SPE_miniproject.git'
     }
 
+    tools {
+        // Specify the Maven installation label configured in Jenkins
+        maven 'maven'
+    }
     stages {
         stage('Checkout') {
             steps {
